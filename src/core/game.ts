@@ -154,6 +154,7 @@ export class Game {
     this.state = "SPINNING";
     this.balance -= this.currentBet();
     this.betPayout = 0;
+    this.winMessage.alpha = 0;
     this.updateHud();
 
     this.reels.forEach((r) => {
